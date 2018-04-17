@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'clock'
+Slack : -3.490
+TNS   : -4.431
+
+Type  : Slow 1100mV 85C Model Setup 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : -3.312
+TNS   : -93.838
+
+Type  : Slow 1100mV 85C Model Setup 'game:inst13|counter[1]'
+Slack : -2.808
+TNS   : -19.699
+
+Type  : Slow 1100mV 85C Model Setup 'hvsync:inst8|vsync'
+Slack : -2.011
+TNS   : -3.977
+
+Type  : Slow 1100mV 85C Model Hold 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : 0.454
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'game:inst13|counter[1]'
+Slack : 0.482
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'clock'
+Slack : 0.706
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'hvsync:inst8|vsync'
+Slack : 0.761
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : -0.394
+TNS   : -20.368
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'game:inst13|counter[1]'
+Slack : -0.394
+TNS   : -4.107
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.394
+TNS   : -1.789
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'hvsync:inst8|vsync'
+Slack : -0.394
+TNS   : -1.104
+
+Type  : Slow 1100mV 0C Model Setup 'clock'
+Slack : -3.481
+TNS   : -4.559
+
+Type  : Slow 1100mV 0C Model Setup 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : -3.323
+TNS   : -92.154
+
+Type  : Slow 1100mV 0C Model Setup 'game:inst13|counter[1]'
+Slack : -2.875
+TNS   : -20.132
+
+Type  : Slow 1100mV 0C Model Setup 'hvsync:inst8|vsync'
+Slack : -2.009
+TNS   : -3.997
+
+Type  : Slow 1100mV 0C Model Hold 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : 0.466
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'game:inst13|counter[1]'
+Slack : 0.488
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'clock'
+Slack : 0.735
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'hvsync:inst8|vsync'
+Slack : 0.825
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.395
+TNS   : -1.908
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : -0.394
+TNS   : -20.071
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'game:inst13|counter[1]'
+Slack : -0.394
+TNS   : -4.080
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'hvsync:inst8|vsync'
+Slack : -0.394
+TNS   : -1.074
+
+Type  : Fast 1100mV 85C Model Setup 'clock'
+Slack : -2.520
+TNS   : -2.520
+
+Type  : Fast 1100mV 85C Model Setup 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : -1.803
+TNS   : -43.971
+
+Type  : Fast 1100mV 85C Model Setup 'game:inst13|counter[1]'
+Slack : -1.267
+TNS   : -8.782
+
+Type  : Fast 1100mV 85C Model Setup 'hvsync:inst8|vsync'
+Slack : -1.243
+TNS   : -2.454
+
+Type  : Fast 1100mV 85C Model Hold 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : 0.124
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'game:inst13|counter[1]'
+Slack : 0.194
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'clock'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'hvsync:inst8|vsync'
+Slack : 0.399
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clock'
+Slack : -0.432
+TNS   : -0.741
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : 0.030
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'hvsync:inst8|vsync'
+Slack : 0.076
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'game:inst13|counter[1]'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clock'
+Slack : -2.200
+TNS   : -2.200
+
+Type  : Fast 1100mV 0C Model Setup 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : -1.583
+TNS   : -38.873
+
+Type  : Fast 1100mV 0C Model Setup 'game:inst13|counter[1]'
+Slack : -1.151
+TNS   : -7.804
+
+Type  : Fast 1100mV 0C Model Setup 'hvsync:inst8|vsync'
+Slack : -1.120
+TNS   : -2.223
+
+Type  : Fast 1100mV 0C Model Hold 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : 0.074
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'game:inst13|counter[1]'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'clock'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'hvsync:inst8|vsync'
+Slack : 0.351
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clock'
+Slack : -0.429
+TNS   : -0.739
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'lpm_counter0:inst|lpm_counter:LPM_COUNTER_component|cntr_bti:auto_generated|counter_reg_bit[2]'
+Slack : 0.061
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'hvsync:inst8|vsync'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'game:inst13|counter[1]'
+Slack : 0.156
+TNS   : 0.000
+
+------------------------------------------------------------

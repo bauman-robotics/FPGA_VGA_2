@@ -1,0 +1,107 @@
+--altufm_none CBX_DECLARE_ALL_CONNECTED_PORTS="OFF" DEVICE_FAMILY="Cyclone V" ERASE_TIME=500000000 OSC_FREQUENCY=180000 PROGRAM_TIME=1600000 WIDTH_UFM_ADDRESS=9 arclk ardin arshft drclk drdin drshft erase oscena program
+--VERSION_BEGIN 17.0 cbx_a_gray2bin 2017:04:19:09:17:27:SJ cbx_a_graycounter 2017:04:19:09:17:27:SJ cbx_altufm_none 2017:04:19:09:17:27:SJ cbx_cycloneii 2017:04:19:09:17:27:SJ cbx_lpm_add_sub 2017:04:19:09:17:27:SJ cbx_lpm_compare 2017:04:19:09:17:27:SJ cbx_lpm_counter 2017:04:19:09:17:27:SJ cbx_lpm_decode 2017:04:19:09:17:27:SJ cbx_lpm_mux 2017:04:19:09:17:27:SJ cbx_maxii 2017:04:19:09:17:27:SJ cbx_mgl 2017:04:19:10:26:36:SJ cbx_nadder 2017:04:19:09:17:27:SJ cbx_stratix 2017:04:19:09:17:27:SJ cbx_stratixii 2017:04:19:09:17:27:SJ cbx_util_mgl 2017:04:19:09:17:27:SJ  VERSION_END
+
+
+-- Copyright (C) 2017  Intel Corporation. All rights reserved.
+--  Your use of Intel Corporation's design tools, logic functions 
+--  and other software and tools, and its AMPP partner logic 
+--  functions, and any output files from any of the foregoing 
+--  (including device programming or simulation files), and any 
+--  associated documentation or information are expressly subject 
+--  to the terms and conditions of the Intel Program License 
+--  Subscription Agreement, the Intel Quartus Prime License Agreement,
+--  the Intel MegaCore Function License Agreement, or other 
+--  applicable license agreement, including, without limitation, 
+--  that your use is for the sole purpose of programming logic 
+--  devices manufactured by Intel and sold by Intel or its 
+--  authorized distributors.  Please refer to the applicable 
+--  agreement for further details.
+
+
+include "maxii_ufm.inc";
+
+--synthesis_resources = maxii_ufm 1 
+SUBDESIGN altufm_none_egj
+( 
+	arclk	:	input;
+	ardin	:	input;
+	arshft	:	input;
+	busy	:	output;
+	drclk	:	input;
+	drdin	:	input;
+	drdout	:	output;
+	drshft	:	input;
+	erase	:	input;
+	osc	:	output;
+	oscena	:	input;
+	program	:	input;
+	rtpbusy	:	output;
+) 
+VARIABLE 
+	maxii_ufm_block1 : maxii_ufm
+		WITH (
+			ADDRESS_WIDTH = 9,
+			ERASE_TIME = 500000000,
+			INIT_FILE = "none",
+			mem1 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem10 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem11 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem12 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem13 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem14 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem15 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem16 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem2 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem3 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem4 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem5 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem6 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem7 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem8 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			mem9 = "FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF",
+			OSC_SIM_SETTING = 180000,
+			PROGRAM_TIME = 1600000
+		);
+	ufm_arclk	: WIRE;
+	ufm_ardin	: WIRE;
+	ufm_arshft	: WIRE;
+	ufm_bgpbusy	: WIRE;
+	ufm_busy	: WIRE;
+	ufm_drclk	: WIRE;
+	ufm_drdin	: WIRE;
+	ufm_drdout	: WIRE;
+	ufm_drshft	: WIRE;
+	ufm_erase	: WIRE;
+	ufm_osc	: WIRE;
+	ufm_oscena	: WIRE;
+	ufm_program	: WIRE;
+
+BEGIN 
+	maxii_ufm_block1.arclk = ufm_arclk;
+	maxii_ufm_block1.ardin = ufm_ardin;
+	maxii_ufm_block1.arshft = ufm_arshft;
+	maxii_ufm_block1.drclk = ufm_drclk;
+	maxii_ufm_block1.drdin = ufm_drdin;
+	maxii_ufm_block1.drshft = ufm_drshft;
+	maxii_ufm_block1.erase = ufm_erase;
+	maxii_ufm_block1.oscena = ufm_oscena;
+	maxii_ufm_block1.program = ufm_program;
+	busy = ufm_busy;
+	drdout = ufm_drdout;
+	osc = ufm_osc;
+	rtpbusy = ufm_bgpbusy;
+	ufm_arclk = arclk;
+	ufm_ardin = ardin;
+	ufm_arshft = arshft;
+	ufm_bgpbusy = maxii_ufm_block1.bgpbusy;
+	ufm_busy = maxii_ufm_block1.busy;
+	ufm_drclk = drclk;
+	ufm_drdin = drdin;
+	ufm_drdout = maxii_ufm_block1.drdout;
+	ufm_drshft = drshft;
+	ufm_erase = erase;
+	ufm_osc = maxii_ufm_block1.osc;
+	ufm_oscena = oscena;
+	ufm_program = program;
+END;
+--VALID FILE
