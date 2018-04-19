@@ -63,8 +63,8 @@ begin
 	begin
 		//reset
 		goals <= 0;
-		x<=0;
-		y<=0;
+		x<=20;
+		y<=20;
 	end
 	else
 	begin

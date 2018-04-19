@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA4U23) Path("/home/arkhan/Arkhan_projects/Quartus_projects/VGA/GitRepo_fix/Cyclone4tennis2/") File("max2.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA4U23) Path("/home/arkhan/Arkhan_projects/Quartus_projects/VGA/GitRepo_04_19/FPGA_VGA_2/Cyclone4tennis2/") File("max2.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

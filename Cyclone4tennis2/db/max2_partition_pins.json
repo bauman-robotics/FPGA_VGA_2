@@ -56,6 +56,38 @@
 					"strict" : false
 				},
 				{
+					"name" : "led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "led[6]",
+					"strict" : false
+				},
+				{
+					"name" : "led[5]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
 					"name" : "VGA_BLUE[9]",
 					"strict" : false
 				},
@@ -180,11 +212,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "key_0",
+					"name" : "key_1",
 					"strict" : false
 				},
 				{
-					"name" : "key_1",
+					"name" : "PS2_DAT",
+					"strict" : false
+				},
+				{
+					"name" : "PS2_CLK",
 					"strict" : false
 				}
 			]

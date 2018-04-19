@@ -1,5 +1,5 @@
 Flow report for max2
-Tue Apr 17 20:37:48 2018
+Thu Apr 19 17:11:13 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Standard Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +-----------------------------------------------------------------------------------+
 ; Flow Summary                                                                      ;
 +---------------------------------+-------------------------------------------------+
-; Flow Status                     ; Successful - Tue Apr 17 20:37:42 2018           ;
+; Flow Status                     ; Successful - Thu Apr 19 17:11:07 2018           ;
 ; Quartus Prime Version           ; 17.0.0 Build 595 04/25/2017 SJ Standard Edition ;
 ; Revision Name                   ; max2                                            ;
 ; Top-level Entity Name           ; max2                                            ;
 ; Family                          ; Cyclone V                                       ;
 ; Device                          ; 5CSEMA4U23C6                                    ;
 ; Timing Models                   ; Final                                           ;
-; Logic utilization (in ALMs)     ; 53 / 15,880 ( < 1 % )                           ;
-; Total registers                 ; 50                                              ;
-; Total pins                      ; 54 / 314 ( 17 % )                               ;
+; Logic utilization (in ALMs)     ; 105 / 15,880 ( < 1 % )                          ;
+; Total registers                 ; 131                                             ;
+; Total pins                      ; 56 / 314 ( 18 % )                               ;
 ; Total virtual pins              ; 0                                               ;
 ; Total block memory bits         ; 0 / 2,764,800 ( 0 % )                           ;
 ; Total DSP Blocks                ; 0 / 84 ( 0 % )                                  ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/17/2018 20:37:04 ;
+; Start date & time ; 04/19/2018 17:10:25 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; max2                ;
 +-------------------+---------------------+
@@ -79,7 +79,7 @@ agreement for further details.
 +---------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                       ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +---------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID                 ; 18121609182035.152398662423540         ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID                 ; 18121609182035.152414702524628         ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP                ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP                ; 0                                      ; --            ; --          ; --         ;
 ; MISC_FILE                             ; lpm_counter0.bsf                       ; --            ; --          ; --         ;
@@ -91,7 +91,9 @@ agreement for further details.
 ; PARTITION_FITTER_PRESERVATION_LEVEL   ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
 ; PARTITION_NETLIST_TYPE                ; -- (Not supported for targeted family) ; --            ; main        ; Top        ;
 ; PARTITION_NETLIST_TYPE                ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL             ; None (CONSERVATIVE)                    ; --            ; --          ; --         ;
 ; POWER_EXT_SUPPLY_VOLTAGE_TO_REGULATOR ; -- (Not supported for targeted family) ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION         ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --         ;
 ; USE_GENERATED_PHYSICAL_CONSTRAINTS    ; Off                                    ; --            ; --          ; eda_palace ;
 +---------------------------------------+----------------------------------------+---------------+-------------+------------+
 
@@ -101,11 +103,11 @@ agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 1028 MB             ; 00:00:19                           ;
-; Fitter                    ; 00:00:23     ; 1.1                     ; 1885 MB             ; 00:00:39                           ;
-; Assembler                 ; 00:00:04     ; 1.0                     ; 968 MB              ; 00:00:04                           ;
-; TimeQuest Timing Analyzer ; 00:00:05     ; 1.1                     ; 1165 MB             ; 00:00:05                           ;
-; Total                     ; 00:00:41     ; --                      ; --                  ; 00:01:07                           ;
+; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 1026 MB             ; 00:00:19                           ;
+; Fitter                    ; 00:00:27     ; 1.1                     ; 1900 MB             ; 00:00:43                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 975 MB              ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:05     ; 1.2                     ; 1152 MB             ; 00:00:06                           ;
+; Total                     ; 00:00:46     ; --                      ; --                  ; 00:01:13                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

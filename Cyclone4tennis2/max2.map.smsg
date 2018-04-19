@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at ps2.v(18): always construct contains both blocking and non-blocking assignments File: /home/arkhan/Arkhan_projects/Quartus_projects/VGA/GitRepo_04_19/FPGA_VGA_2/Cyclone4tennis2/ps2.v Line: 18
+Info (10281): Verilog HDL Declaration information at ps2.v(2): object "PS2_CLK_in" differs only in case from object "ps2_clk_in" in the same scope File: /home/arkhan/Arkhan_projects/Quartus_projects/VGA/GitRepo_04_19/FPGA_VGA_2/Cyclone4tennis2/ps2.v Line: 2
+Info (10281): Verilog HDL Declaration information at ps2.v(1): object "PS2_DAT_in" differs only in case from object "ps2_dat_in" in the same scope File: /home/arkhan/Arkhan_projects/Quartus_projects/VGA/GitRepo_04_19/FPGA_VGA_2/Cyclone4tennis2/ps2.v Line: 1
